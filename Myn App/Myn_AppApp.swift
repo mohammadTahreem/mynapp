@@ -11,7 +11,7 @@ import SwiftUI
 struct Myn_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HapticFeedbackView()
         }
     }
 }

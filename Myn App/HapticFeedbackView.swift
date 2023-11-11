@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct HapticFeedbackView: View {
+    @State var counter = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Counter value is: \(counter)"){
+            counter += 1
+        }.sensoryFeedback(.warning, trigger: counter)
     }
 }
 
